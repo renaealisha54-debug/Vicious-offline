@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 25% 6%;
+    --foreground: 210 20% 98%;
+    --card: 240 25% 8%;
+    --card-foreground: 210 20% 98%;
+    --popover: 240 25% 6%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 240 100% 79%;
+    --primary-foreground: 240 25% 6%;
+    --secondary: 240 15% 15%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 240 15% 12%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 216 100% 75%;
+    --accent-foreground: 240 25% 6%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 240 15% 15%;
+    --input: 240 15% 15%;
+    --ring: 240 100% 79%;
+    --radius: 0.75rem;
+    --sidebar-background: 240 25% 8%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 240 100% 79%;
+    --sidebar-primary-foreground: 240 25% 6%;
+    --sidebar-accent: 240 15% 15%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 240 15% 15%;
+    --sidebar-ring: 240 100% 79%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.editor-gradient {
+  background: linear-gradient(to bottom, transparent, rgba(148, 148, 255, 0.02));
+}
+
+.floating-glass {
+  @apply bg-card/80 backdrop-blur-md border border-white/5 shadow-2xl;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted rounded-full hover:bg-muted-foreground/30 transition-colors;
+}
