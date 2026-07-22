@@ -1,3 +1,11 @@
+
+
+![Vicious Logo](assets/vicious-logo.png)
+
+
+
+© 2026 Love. All rights reserved.
+
 # Vicious Offline
 
 A focused, AI-powered offline text workspace. Write notes and code snippets with local-first storage, export to `.txt` or `.md`, and use built-in AI tools to summarize or explain selected content.
